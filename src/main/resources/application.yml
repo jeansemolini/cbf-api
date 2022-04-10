@@ -1,0 +1,17 @@
+spring.datasource:
+  url: jdbc:mysql://localhost/cbf?createDatabaseIfNotExist=true&serverTimezone=UTC
+  username: root
+  password: root
+
+spring.jpa:
+  properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+  hibernate.ddl-auto: update
+  show-sql: true
+
+spring.cache.type: redis
+
+spring.activemq.in-memory: false
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
